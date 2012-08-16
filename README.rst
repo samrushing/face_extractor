@@ -14,3 +14,5 @@ To plunk all those into a nice tiled image::
 
   $ python tile_faces.py jill_faces
 
+It'd be nice to figure out how to use the SimilarFaces table to pull
+in all the predicted matches...
