@@ -68,7 +68,8 @@ for _, muuid, face_index, path, uuid in faces:
     p0 = get_face_path (path, uuid, face_index)
     p = PJ (previews_root, p0)
     print p0, os.path.isfile (p)
-    open ('/tmp/%s/%05d.jpg' % (name, i,), 'wb').write (open (p).read())
+    p1 = PJ (dest, '%05d.jpg' % (i,))
+    open (p1, 'wb').write (open (p).read())
     i += 1
     
 sys.stderr.write ("found %d faces...\n" % len(faces),)
